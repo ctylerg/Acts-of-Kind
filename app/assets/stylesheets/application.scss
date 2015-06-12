@@ -1,0 +1,49 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import 'normalize.scss';
+@import 'skeleton.scss';
+
+
+*{
+  list-style-type: none;
+}
+
+// html, body{
+//   height: 100%;
+//   overflow: hidden;
+// }
+
+body{
+  background-color: white;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.map, #smallMap{
+  padding: 0px;
+}
+#smallMap{
+  width: 250px;
+  height: 200px;
+  margin: 0px auto;
+}
+
+.map, #largeMap{
+    width: 960px;
+    height: 650px;
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+}

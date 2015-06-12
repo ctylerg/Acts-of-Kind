@@ -1,0 +1,130 @@
+// // Place all the styles related to the hands controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
+//
+.dev{
+  // background-color:lightblue;
+  // border: 1px solid red;
+}
+
+$headerheight: 125px;
+$maincolor: tomato;
+$secondcolor: #33C3F0;
+$thirdcolor: white;
+
+.submit-form{
+  z-index: 3;
+  position: fixed;
+  background-color: white;
+  color: $secondcolor;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,.6);
+  -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,.6);
+  box-shadow: 0px 4px 6px 0px rgba(0,0,0,.6);
+
+}
+.not-move{
+  top: 0;
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: auto;
+  z-index: 3;
+  overflow: visible;
+  background-color: $maincolor;
+  color: white;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,.6);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,.6);
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,.6);
+  #site-tagline{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 3em;
+  color: white;
+  // text-shadow: 2px 2px 0px white;
+  margin: 0px auto;
+  }
+  #tagline2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+  }
+  .menu{
+    border: 1px solid white;
+  }
+}
+
+#content{
+  margin-top: $headerheight;
+  h5{
+    margin: 0 auto;
+  }
+  hr{
+    clear: both;
+  }
+}
+.sidebar{
+  height: auto;
+  position: fixed;
+  padding: 2%;
+  background-color: $thirdcolor;
+  margin: 0 auto;
+  // border-left: 1px solid $secondcolor;
+  -webkit-box-shadow: 0px 6px 8px 0px rgba(216,216,216,1);
+  -moz-box-shadow: 0px 6px 8px 0px rgba(216,216,216,1);
+  box-shadow: 0px 6px 8px 0px rgba(216,216,216,1);
+    form{
+      margin: 0 auto;
+    }
+  }
+
+#hot-tab, #new-tab, #share-something-form-toggle{
+    padding: 2%;
+    margin: 0px auto;
+}
+
+#new_hand{
+  width: 100%;
+  padding: 6%;
+  background-color: thirdcolor;
+  z-index: 2;
+}
+
+#hand-card{
+  background-color: $thirdcolor;
+  color: black;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 6px 8px 0px rgba(216,216,216,1);
+  -moz-box-shadow: 0px 6px 8px 0px rgba(216,216,216,1);
+  box-shadow: 0px 6px 8px 0px rgba(216,216,216,1);
+  hr{
+    clear:both;
+    margin-top: 2%;
+    margin-bottom: 2%
+  }
+  .img-wrapper{
+    width: 100%;
+    margin: 0px auto;
+  }
+  img{
+    width: 100%;
+  }
+  hand-title{
+    margin: 0px auto;
+    width: 100%;
+  }
+  button{
+    float: right;
+  }
+  .card-top{
+    background-color: $thirdcolor;
+    padding-top: 4%;
+  }
+  .card-body{
+    padding-bottom: 4%;
+  }
+  .card-top, .card-body{
+  padding-left: 6%;
+  padding-right: 6%;
+  }
+
+}

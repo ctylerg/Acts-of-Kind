@@ -1,0 +1,90 @@
+<meta name="viewport" content="width=550, initial-scale=1">
+
+<div class='not-move dev'>
+  <div class="container">
+    <div class="row dev">
+      <div class='headertop1'>
+        <span class="eight columns" id="site-tagline">
+          <%= image_tag('logo.png', :style => "width: 50px; hieght: 50px;") %>
+           Be Kind <span id="tagline2"> for no good reason.</span></span>
+        <span class="four columns dev" id="greetings"> <h7><%= @user.username %> </h7></span>
+      </div>
+    </div>
+    <div class="twelve columns dev">
+      <span class="twelve columns dev" id="share-something-form-toggle"> Share something kind </span>
+      <span class='twelve columns dev'>
+        <div class="submit-form dev">
+            <form action= "/hands" enctype="multipart/form-data" class="new_hand" id="new_hand">
+              <%= token_tag %>
+              <div class="twelve columns">
+                <label for="headline">Headline</label>
+                <input id="headline" type="text" name="hand[title]" placeholder="Headline....">
+              </div>
+              <div class="twelve columns">
+                <label for="actOfKindness">Describe the kind act</label>
+                <input id="actOfKindness" type="text" name="hand[message]" placeholder="Act of Kindness....">
+              </div>
+              <input type="file" name="hand[image]" id="file">
+            </br>
+              <input id="submit-hand" class="button-primary" type="submit" value="Share the Love!">
+            </form>
+        </div>
+      </span>
+</div>
+</div>
+</div>
+
+
+<div class="row" id="content">
+  <div class="row">
+    <span class="three columns dev" id="hot-tab"> <h5> Trending </h5></span>
+    <span class="three columns dev" id="new-tab"> <h5> New </h5></span>
+    <HR>
+  </div>
+  <class="row">
+  <div class='eight columns dev' id="hand-stage"></div>
+
+  <div class='four columns dev'>
+    <div class="sidebar">
+
+      <div class="row">
+        <span class='twelve columns dev'>
+            <strong>We believe one small act of kindness </br>has the power to change the world.</strong>
+          </br> We want to be the first to map the spread </br>of kind acts, real time.
+        <span>
+        </div>
+
+    <div class="row">
+    <a href="./map"><button type="button" name="button">see the map</button></a>
+    <span class="twelve columns dev">
+      <%= form_tag('/session_log_out', method: :delete) do %>
+      <%= submit_tag "Log-Out" %>
+      <% end %>
+    </span>
+  </div>
+  </div>
+
+
+<script>
+//DECLARES TIME/DATE VARS
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+var display = $('#greetings')
+
+//DISPLAYS TIME-BASED GREETING TO CURRENT_USER
+function heyYall(){
+  if (hourNow > 18){
+    greeting = 'Good Evening, ';
+  } else if (hourNow > 12){
+    greeting = 'Good Afternoon, ';
+  } else if (hourNow > 0){
+    greeting = 'Good Morning, ';
+  } else {
+    greeting = 'Welcome, ';
+  }
+  display.prepend(greeting);
+}
+
+heyYall()
+</script>
