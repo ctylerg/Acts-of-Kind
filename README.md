@@ -3,7 +3,7 @@
 #KINDLIES
 This is the first version of Kindlies, a social media app for people who carry out random acts of kindness and wish to share.  Kindlies was built with Ruby on Rails and incorporates Backbone, geotags, and API technologies. Skeleton was employed to display a consistent polished look.
 
-Kindlies allows users to log-in and record their acts of kindness.  Whether it's helping someone cross the street or serving a meal at the local soup kitchen, you can the world know what acts of kindness are happening around you.  There is a text box for a high level description as well as a message box to go into more detail.  But wait, there's more... you can even upload pictures of these acts and pot them on the site.
+Kindlies allows users to log-in and record their acts of kindness.  Whether it's helping someone cross the street or serving a meal at the local soup kitchen, you can let the world know what acts of kindness are happening around you.  There is a text box for a high level description as well as a message box to go into more detail.  But wait, there's more... you can even upload pictures of these acts and put them on the site.
 
 
 #Screenshots
